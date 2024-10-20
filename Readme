@@ -1,0 +1,86 @@
+# Rule Engine with AST
+
+## Description
+This project implements a simple 3-tier rule engine application using Abstract Syntax Trees (AST) to determine user eligibility based on attributes like age, department, income, spend, etc. The system allows for dynamic creation, combination, and modification of conditional rules.
+
+## Features
+- Create and store rules using a string representation
+- Combine multiple rules into a single AST
+- Evaluate rules against provided data
+- RESTful API for rule management
+- React-based frontend for rule creation and evaluation
+
+## Technologies Used
+- Backend:
+  - Node.js
+  - Express.js
+  - MongoDB
+  - TypeScript
+- Frontend:
+  - React
+  - Axios
+  - Vite
+
+## Prerequisites
+- Node.js (v14 or later)
+- MongoDB
+- npm or yarn
+
+## Installation
+
+### Backend
+1. Clone the repository:
+git clone [https://github.com/yourusername/rule-engine-ast.git](https://github.com/yourusername/rule-engine-ast.git)
+cd rule-engine-ast
+
+
+2. Install dependencies:
+
+npm install
+
+
+3. Set up environment variables:
+Create a `.env` file in the root directory and add:
+
+MONGODB_URI=mongodb://localhost:27017/rule_engine
+PORT=3000
+
+4. Start the server:
+
+npm run dev
+
+### Frontend
+1. Navigate to the client directory:
+
+cd client
+
+2. Install dependencies:
+npm install
+
+3. Start the development server:
+
+npm run dev
+
+## Usage
+
+### API Endpoints
+- POST `/api/create-rule`: Create a new rule
+- POST `/api/combine-rules`: Combine multiple rules
+- POST `/api/evaluate-rule`: Evaluate a rule against provided data
+- PUT `/api/update-rule`: Update an existing rule
+- DELETE `/api/delete-rule/:name`: Delete a rule
+
+### Frontend
+The frontend provides a user interface for:
+- Creating rules
+- Evaluating rules with custom data
+
+## Testing
+Run the test suite with:
+npm test
+
+## Contributing
+Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.

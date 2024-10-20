@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "esModuleInterop": true,
+      "target": "ESNext",
+      "moduleResolution": "node",
+      "composite": true
+    },
+    "include": [
+      "vite.config.ts",
+      "scripts/**/*.ts"
+    ]
+  }
+  
